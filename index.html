@@ -20,49 +20,110 @@
   </head>
   <body>
     <!-- Navigation bootstrap -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-      <div class="container">
-        <a href="#" class="navbar-brand">Tomasz Bachula Portfolio</a>
-        <!-- Burger button  -->
-
-        <button 
-            class="navbar-toggler" 
-            type="button" 
-            data-bs-toggler="collapse" 
-            data-bs-target="#nav-menu"
-        >
-                <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- button finish -->
-        <div class="collapse navbar-collapse" id="nav-menu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a href="#main" class="nav-link">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a href="#project" class="nav-link">My Projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact Me</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- hero section -->
-    <section class="bg-dark text-light p-5 text-center">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top mb-3">
         <div class="container">
-            <div class="d-flex">
-                <div>
-                    <h2>Welcome in my portfolio website</h2>
-                    <p>Hello i'm Tomasz, a budding web developer who embarked on my coding journey just two weeks ago by enrolling in an intensive BootCamp on edX. With a passion for technology and a desire to break into the world of web development, i'm eagerly took my first steps into this exciting field. My journey began with the fundamentals of HTML, where i am learned to structure web pages, create headings, paragraphs, and lists. i am quickly grasped the concept of tags and attributes, and within days, i was crafting basic web pages from scratch !. Next, I dived into the world of CSS, where i am discovered the magic of styling and design, experimented with colors, fonts, and layouts, transforming my plain HTML pages into visually appealing works of art. JavaScript is my next challenge. I'm fascinated by the power of this programming language to make this web pages interactive.</p>
+          <a href="#" class="navbar-brand">Tomasz Bachula Portfolio</a>
+  
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#main" class="nav-link">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a href="#project" class="nav-link">My Project</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+    <!-- hero section -->
+    <section class="bg-dark text-light p-5 text-center text-sm">
+        <div class="container-fluid">
+            <div class="d-sm-flex align-items-center justify-content-beetwen">
+                <div class="p-5">
+                    <h2>Welcome in <span class="text-warning">My Portfolio Website</span></h2>
+                    <p class="lead">Hello i'm Tomasz, a budding web developer who embarked on my coding journey just two weeks ago by enrolling in an intensive BootCamp on edX. With a passion for technology and a desire to break into the world of web development, i'm eagerly took my first steps into this exciting field. My journey began with the fundamentals of HTML, where i am learned to structure web pages, create headings, paragraphs, and lists. i am quickly grasped the concept of tags and attributes, and within days, i was crafting basic web pages from scratch !. Next, I dived into the world of CSS, where i am discovered the magic of styling and design, experimented with colors, fonts, and layouts, transforming my plain HTML pages into visually appealing works of art. JavaScript is my next challenge. I'm fascinated by the power of this programming language to make this web pages interactive.</p>
                 </div>
-                <img src="../bootstrap-Tomasz-Portfolio/images/cv.jpg" alt="Photo of Tomasz in Suit ">
+                <img  class="img-fluid w-50 d-sm-block" src="../bootstrap-Tomasz-Portfolio/images/cv.jpg" alt="Photo of Tomasz in Suit ">
             </div>
         </div>
     </section>
+    <!-- Hero end -->
 
+    <!-- Project section -->
+        <section class="p-5">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="../bootstrap-Tomasz-Portfolio/images/undraw_Certificate_re_yadi.png" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="../bootstrap-Tomasz-Portfolio/images/undraw_Static_website_re_x70h.png" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md"><div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../bootstrap-Tomasz-Portfolio/images/undraw_To_the_moon_re_q21i.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div></div>
+                </div>
+            </div>
+        </section>
 
+    <!-- Contact form -->
+    <form class="p-5 m-2">
+        <div class="form-row contact">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          </div>
+         
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">Your Message</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Send Message ?
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
